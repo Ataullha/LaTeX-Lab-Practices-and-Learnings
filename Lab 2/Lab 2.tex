@@ -1,0 +1,135 @@
+\documentclass[a4paper,12pt]{report}
+
+\usepackage{color}
+
+\setcounter{chapter}{1}
+
+\begin{document}
+
+\title{My First LaTeX Document}
+\author{Md Ataullha}
+\date{\today}
+\maketitle
+
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+
+\addcontentsline{toc}{chapter}{Practical 1: Document Structure}
+\chapter*{Practical 1: Document Structure}
+
+\section{Introduction}This is the Introduction section.
+
+\section{Methods} 
+This is the Methods section.
+
+\subsection{Stage 1}
+\label{sec1}
+This is the Stage 1 subsection and there is a label on it.
+\subsubsection{Part 1}
+This is another subsubsection under subsection.
+
+
+\subsection{Stage 2}
+This is anoter Stage 2 subsection.
+
+\section{Results}
+Here is the results section. Referring to section \ref{sec1} on page \pageref{sec1}.
+
+\paragraph{First Paragraph}
+This is a simple paragraph named First Paragraph. We used the pragraph command here.
+\subparagraph{First Paragraph Sub Paragraph}
+This is a subparagraph under the First paragraph.
+
+\stepcounter{chapter} % if we do \stepcounter{chapter}{2} it will produce extra 2
+\addcontentsline{toc}{chapter}{Practical 2: Typesetting Text}
+\chapter*{Practical 2:Typesetting Text }
+
+\section{Font Effects}
+\textit{textit command for italitcs font effect.}\\
+\textsl{textsl command for slanted font effect.}\\
+\textsc{textsc command for smallcaps font effect.}\\
+\textbf{textbf command for bold font effect.}\\
+\texttt{texttt command for teletype font effect.}\\
+\textsf{textsf command for sans serif font effect.}\\
+\textrm{textrm command for roman font effect.}\\
+\underline{underline command for underline font effect.}\\
+\underline{\textbf{underline and textsc command for underline and bold font effect.}}\\
+
+\section{Color Effects}
+{\color{red}This is Red.}\\
+{\color{green}This is Green.}\\
+{\color{blue}This is Blue.}\\
+{\color{cyan}This is Cyan.}\\
+{\color{magenta}This is Magenta.}\\
+{\color{yellow} This is Yellow.}\\
+{\color{white}This is White.}\\
+
+\section{Size Effects}
+{\tiny tiny command for tiny font size.}\\
+{\scriptsize scriptsize  command for scriptsize font size.}\\
+{\small small command for small font size.}\\
+{\normalsize normalsize command for normalsize font size.}\\
+{\large large command for large font size.}\\
+{\Large Large command for Large font size.}\\
+{\LARGE LARGE  command for LARGE font size.}\\
+{\huge huge command for huge font size}\\
+
+\section{Lists}
+A list and sub-list with enumerate only \\
+\begin{enumerate}
+\item First item.
+\item Second item.
+\begin{itemize}
+\item A sub-item.
+\item Another sub-item.
+\end{itemize}
+\item Third item.
+\end{enumerate}
+
+A list and sub-list \\
+\begin{itemize}
+\item First item.
+\item Second item.
+\begin{itemize}
+\item A sub-item.
+\item Another sub-item.
+\end{itemize}
+\item Third item.
+\end{itemize}
+
+A custom type list\\
+\begin{itemize}
+\item[-] First item.
+\item[+] Second item.
+\begin{itemize}
+\item[ABC] A sub-item.
+\item[DEF] Another sub-item.
+\end{itemize}
+\item[@] Third item.
+\end{itemize}
+
+\section{Comments}
+Believe that life is worth living % Note comic irony in the very first sentence
+, and your belief will help create the fact.
+
+% This is a comment.
+
+\vspace{12pt}
+\vspace{12pt}
+\vspace{12pt}
+\vspace{12pt}
+\vspace{12pt}
+This is spacing.
+
+\# \$ \% \^{} \& \_ \{ \} \~{}
+
+\section{Spacing}
+\vspace{12pt}
+\vspace{12pt}
+\vspace{12pt}
+
+Item \#1A\textbackslash642 costs \$8 \& is sold at a \~{}10\% profit.
+
+\end{document}
