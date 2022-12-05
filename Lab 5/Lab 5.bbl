@@ -1,0 +1,63 @@
+\begin{thebibliography}{10}
+
+\bibitem{Birdetal2001}
+R.~B. Bird, E.~A. Smith, and Bird~D. W.
+\newblock The hunting handicap: costly signaling in human foraging strategies.
+\newblock {\em Behavioral Ecology and Sociobiology}, 50:9--19, 2001.
+
+\bibitem{p5}
+Li-Wei Chen and Alexander Rudnicky.
+\newblock Fine-grained style control in transformer-based text-to-speech
+  synthesis.
+\newblock In {\em ICASSP 2022-2022 IEEE International Conference on Acoustics,
+  Speech and Signal Processing (ICASSP)}, pages 7907--7911. IEEE, 2022.
+
+\bibitem{w1}
+Google.
+\newblock This is how you cite a website in latex.
+\newblock \url{http://www.google.com}, December 2022.
+
+\bibitem{p6}
+Yifan Hu, Pengkai Yin, Rui Liu, Feilong Bao, and Guanglai Gao.
+\newblock Mntts: An open-source mongolian text-to-speech synthesis dataset and
+  accompanied baseline.
+\newblock {\em arXiv preprint arXiv:2209.10848}, 2022.
+
+\bibitem{p1}
+Rongjie Huang, Yi~Ren, Jinglin Liu, Chenye Cui, and Zhou Zhao.
+\newblock Generspeech: Towards style transfer for generalizable out-of-domain
+  text-to-speech synthesis.
+\newblock {\em arXiv preprint arXiv:2205.07211}, 2022.
+
+\bibitem{9001082}
+Shafkat Kibria, M.~Shahidur Rahman, M.~Reza Selim, and M.~Zafar Iqbal.
+\newblock Acoustic analysis of the speakers’ variability for regional
+  accent-affected pronunciation in bangladeshi bangla: A study on sylheti
+  accent.
+\newblock {\em IEEE Access}, 8:35200--35221, 2020.
+
+\bibitem{p2}
+Yinghao~Aaron Li, Cong Han, and Nima Mesgarani.
+\newblock Styletts: A style-based generative model for natural and diverse
+  text-to-speech synthesis.
+\newblock {\em arXiv preprint arXiv:2205.15439}, 2022.
+
+\bibitem{p4}
+Ali~Raheem Mandeel, Mohammed~Salah Al-Radhi, and Tam{\'a}s~G{\'a}bor Csap{\'o}.
+\newblock Investigations on speaker adaptation using a continuous vocoder
+  within recurrent neural network based text-to-speech synthesis.
+\newblock {\em Multimedia Tools and Applications}, pages 1--15, 2022.
+
+\bibitem{9654185}
+Sadia Sultana, M.~Zafar Iqbal, M.~Reza Selim, Md.~Mijanur Rashid, and
+  M.~Shahidur Rahman.
+\newblock Bangla speech emotion recognition and cross-lingual study using deep
+  cnn and blstm networks.
+\newblock {\em IEEE Access}, 10:564--578, 2022.
+
+\bibitem{p3}
+Jinlong Xue, Yayue Deng, Ya~Li, Jianqing Sun, and Jiaen Liang.
+\newblock Ecapa-tdnn for multi-speaker text-to-speech synthesis.
+\newblock {\em arXiv preprint arXiv:2203.10473}, 2022.
+
+\end{thebibliography}

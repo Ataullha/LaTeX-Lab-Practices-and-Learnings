@@ -1,0 +1,350 @@
+\documentclass[a4paper,12pt]{report}
+
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{subcaption}
+\usepackage{natbib}
+\usepackage{url}
+
+\setcounter{chapter}{1}
+
+\begin{document}
+
+\title{My First LaTeX Document}
+\author{Md Ataullha}
+\date{\today}
+\maketitle
+
+\pagenumbering{roman}
+\tableofcontents
+\listoftables
+\listoffigures
+\newpage
+\pagenumbering{arabic}
+
+\addcontentsline{toc}{chapter}{Practical 1: Document Structure}
+\chapter*{Practical 1: Document Structure}
+
+\section{Introduction}This is the Introduction section.
+
+\section{Methods} 
+This is the Methods section.
+
+\subsection{Stage 1}
+\label{sec1}
+This is the Stage 1 subsection and there is a label on it.
+\subsubsection{Part 1}
+This is another subsubsection under subsection.
+
+
+\subsection{Stage 2}
+This is anoter Stage 2 subsection.
+
+\section{Results}
+Here is the results section. Referring to section \ref{sec1} on page \pageref{sec1}.
+
+\paragraph{First Paragraph}
+This is a simple paragraph named First Paragraph. We used the pragraph command here.
+\subparagraph{First Paragraph Sub Paragraph}
+This is a subparagraph under the First paragraph.
+
+\stepcounter{chapter} % if we do \stepcounter{chapter}{2} it will produce extra 2
+\addcontentsline{toc}{chapter}{Practical 2: Typesetting Text}
+\chapter*{Practical 2:Typesetting Text }
+
+\section{Font Effects}
+\textit{textit command for italitcs font effect.}\\
+\textsl{textsl command for slanted font effect.}\\
+\textsc{textsc command for smallcaps font effect.}\\
+\textbf{textbf command for bold font effect.}\\
+\texttt{texttt command for teletype font effect.}\\
+\textsf{textsf command for sans serif font effect.}\\
+\textrm{textrm command for roman font effect.}\\
+\underline{underline command for underline font effect.}\\
+\underline{\textbf{underline and textsc command for underline and bold font effect.}}\\
+
+\section{Color Effects}
+{\color{red}This is Red.}\\
+{\color{green}This is Green.}\\
+{\color{blue}This is Blue.}\\
+{\color{cyan}This is Cyan.}\\
+{\color{magenta}This is Magenta.}\\
+{\color{yellow} This is Yellow.}\\
+{\color{white}This is White.}\\
+
+\section{Size Effects}
+{\tiny tiny command for tiny font size.}\\
+{\scriptsize scriptsize  command for scriptsize font size.}\\
+{\small small command for small font size.}\\
+{\normalsize normalsize command for normalsize font size.}\\
+{\large large command for large font size.}\\
+{\Large Large command for Large font size.}\\
+{\LARGE LARGE  command for LARGE font size.}\\
+{\huge huge command for huge font size}\\
+
+\section{Lists}
+A list and sub-list with enumerate only \\
+\begin{enumerate}
+\item First item.
+\item Second item.
+\begin{itemize}
+\item A sub-item.
+\item Another sub-item.
+\end{itemize}
+\item Third item.
+\end{enumerate}
+
+A list and sub-list \\
+\begin{itemize}
+\item First item.
+\item Second item.
+\begin{itemize}
+\item A sub-item.
+\item Another sub-item.
+\end{itemize}
+\item Third item.
+\end{itemize}
+
+A custom type list\\
+\begin{itemize}
+\item[-] First item.
+\item[+] Second item.
+\begin{itemize}
+\item[ABC] A sub-item.
+\item[DEF] Another sub-item.
+\end{itemize}
+\item[@] Third item.
+\end{itemize}
+
+\section{Comments}
+Believe that life is worth living % Note comic irony in the very first sentence
+, and your belief will help create the fact.
+
+% This is a comment.
+
+\vspace{12pt}
+\vspace{12pt}
+\vspace{12pt}
+\vspace{12pt}
+\vspace{12pt}
+This is spacing.
+
+\# \$ \% \^{} \& \_ \{ \} \~{}
+
+\section{Spacing}
+\vspace{12pt}
+\vspace{12pt}
+\vspace{12pt}
+
+Item \#1A\textbackslash642 costs \$8 \& is sold at a \~{}10\% profit.
+
+
+\stepcounter{chapter} % if we do \stepcounter{chapter}{3} it will produce extra 3
+\addcontentsline{toc}{chapter}{Practical 3: Tables}
+\chapter*{Practical 3: Tables}
+
+\section{List of Tables}
+
+\begin{table}[ht]
+\label{Table 1}
+	\begin{tabular}{|l|l|}
+	Apples & Green\\
+	Strawberries & Red\\
+	Oranges & Orange\\
+	\end{tabular}
+\caption{Example Table 1}
+\label{Table 1}
+\end{table}
+
+\begin{table}[ht]
+\label{Table 2}
+	\begin{tabular}{rc}
+	Appels & Green\\
+	\hline
+	Strawberries & Red\\
+	\cline{2-2}
+	Oranges & Orange\\
+	\end{tabular}
+\caption{Example Table 2}
+\end{table}
+
+\begin{table}[ht]
+\label{Table 3}
+\begin{tabular}{|r|l|}
+	\hline
+	8 & here's\\
+	\cline{2-2}
+	86 & stuff\\
+	\hline
+	\hline
+	2008 & now\\
+	\hline
+	\end{tabular}
+\caption{Example Table 3}
+\end{table}
+
+
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+\multicolumn{4}{|c|}{Country List}\\
+\hline
+Country Name & ALPHA 2 Code & ALPHA 3 Code & Numeric Code\\
+\hline
+Afghanistan & AF & AFG & 004\\
+Albania & AL & ALB & 008\\
+Algeria & DZ & DZA & 012\\
+Angola & AO & AGO & 024\\
+\hline
+\end{tabular}
+
+\newpage
+
+\begin{tabular}{l|r|r}
+Item & Quantity & Price (\$)\\
+\hline
+Nails & 500 & 0.34\\
+Wooden boards & 100 & 4.00\\
+Bricks & 240 & 11.50\\
+\end{tabular}
+
+\begin{tabular}{c|ccc}
+	& \multicolumn{3}{c}{Year}\\
+\cline{2-4}
+City & 2006 & 2007 & 2008\\
+\hline
+London & 45789 & 46551 & 51298\\
+Berlin & 34549 & 32543 & 29870\\
+Paris & 49835 & 51009 & 51970\\
+\end{tabular}
+
+\stepcounter{chapter} % if we do \stepcounter{chapter}{4} it will produce extra 4
+\addcontentsline{toc}{chapter}{Practical 4: Figures and Equations}
+\chapter*{Practical 4: Figures and Equations}
+
+\section{Figures}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.25\textwidth]{1}
+\caption{One}
+\label{image-1} % need in reference
+\end{figure}
+
+Figure \ref{image-1} shows my histogram.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.25\textwidth]{2}
+\caption{Two}
+\end{figure}
+
+\section{Sub Figures}
+
+\begin{figure}[h!]
+\begin{subfigure}{0.4\textwidth}
+\centering
+\includegraphics[width=0.25\textwidth]{1}
+\caption{One}
+\label{fig:subimage1}
+\end{subfigure}
+\begin{subfigure}{0.4\textwidth}
+\centering
+\includegraphics[width=0.25\textwidth]{2}
+\caption{Two}
+\label{fig:subimage2}
+\end{subfigure}
+
+\caption{subimage1 and subimage2}
+\label{fig:image2}
+\end{figure}
+
+\section{Equations}
+$1+2=3$
+$$1+2=3$$	% center of the page
+\begin{equation}
+1+2=3
+\end{equation}
+
+\begin{eqnarray}
+a&=&b+c \\
+&=&y-z \\
+\end{eqnarray}
+
+$n^2$ \\
+$2_a$ \\
+$b_{a-2}$ \\
+$$\frac{a}{3}$$ \\
+$$\frac{y}{\frac{3}{x}+b}$$ \\
+$$\sqrt{y^2}$$ \\
+$$\sqrt[x]{y^2}$$ \\
+$$\sum_{x=1}^5 y^z$$ \\
+$$\lim_{x \to \infty} f(x)$$ \\
+$$\int_a^b f(x)$$ \\
+
+\begin{equation*}
+	\left[
+	\begin{matrix}
+	1 & 0\\
+	0 & 1\\
+	\end{matrix}
+	\right]
+\end{equation*}
+
+$\alpha$ \\
+$\beta$ \\
+$\delta,\Delta$ \\
+$\theta,\Theta$ \\
+$\mu$ \\
+$\pi,\Pi$ \\
+$\sigma,\Sigma$ \\
+$\phi,\Phi$ \\
+$\psi,\Psi$ \\
+$\omega,\Omega$ \\
+
+\begin{eqnarray}
+e = mc^2 \\
+\pi = \frac{c}{d} \\
+\frac{d}{dx} e^x = e^x \\
+\frac{d}{dx} \int_0^\infty f(s)ds = f(x) \\
+f(x) = \sum_{x=i} = 0^\infty\frac{f^{(i)}{(0)}}{i!}x^i \\
+x = \sqrt{\frac{x_i}{z}y} \\
+\end{eqnarray}
+
+\begin{equation*}
+	\left[
+	\begin{matrix}
+	1 & 2 & 3 & 4 & 5\\
+	6 & 7 & 8 & 9 & 10\\
+	11 &12 & 13 & 14 & 15\\
+	16 & 17 & 18 & 19 & 20\\
+	21 & 22 & 23 & 24 & 25\\
+	\end{matrix}
+	\right]
+\end{equation*}
+
+\newpage
+
+\stepcounter{chapter} % if we do \stepcounter{chapter}{3} it will produce extra 3
+\addcontentsline{toc}{chapter}{Practical 5: References}
+\chapter*{Practical 5: References}
+
+\section{The BibTex file}
+
+\section{Citing references}
+
+\cite{Birdetal2001} This is a normal reference of the Birdetal2001 paper. \\
+\cite[p. 215]{Birdetal2001} This is a demo page reference of the Birdetal2001 paper. \\
+\cite{9654185, 9001082, w1, p1, p2, p3, p4, p5, p6} This is a demo multiple reference. \\
+\cite{9654185} This is just a demo citation of the 1st bib reference. \\
+This is just a demo citation of the 2nd bib reference \cite{9001082}. \\
+
+\section{Styles}
+\subsection{Numerical citations}
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+
+\end{document}
