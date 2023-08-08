@@ -1,4 +1,4 @@
-# My-LaTeX-Learning
+# LaTeX-Lab-Practices-and-Learnings
 My LaTeX Lab Classes, Practices and Learnings
 
 - Practical 1: Document Structure
